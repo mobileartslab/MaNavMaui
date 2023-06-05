@@ -45,15 +45,21 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.81" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="5.2.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="Resources\Splash\" />
 	  <None Remove="Resources\Splash\logowhite.svg" />
 	  <None Remove="Resources\Images\nav_login.png" />
+	  <None Remove="Models\" />
+	  <None Remove="Services\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Resources\Splash\" />
+	  <Folder Include="Models\" />
+	  <Folder Include="Services\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiSplashScreen Include="Resources\Splash\logowhite.svg" BaseSize="128, 128" Color="White" />
